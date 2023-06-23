@@ -1,0 +1,93 @@
+.aboutus-container {
+  width: 100%;
+  height: 100%;
+  margin: 5rem 0 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-title {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 5rem;
+}
+
+.about-title > h1 {
+  font-size: 50px;
+}
+
+.about-logo {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  flex-direction: column;
+}
+
+.about-logo > img {
+  width: 70%;
+}
+
+.about-image-main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image-main > img {
+  width: 90%;
+}
+
+.about-text {
+  width: 55%;
+  margin: 2rem 0;
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.about-image {
+  text-align: center;
+}
+
+.about-image > p {
+  color: #bbbaba;
+}
+
+.about-image > img {
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #171717;
+  height: 200px;
+  overflow: hidden;
+}
+
+.about-logo {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  gap: 10px;
+  background: none;
+}
+
+.about-logo > p {
+  background: none;
+}
+.about-logo > img {
+  background: none;
+}

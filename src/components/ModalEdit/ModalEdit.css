@@ -1,0 +1,255 @@
+.modal-box {
+  position: fixed;
+  top: 50%;
+  left: 40%;
+  width: 40%;
+  padding: 40px;
+  margin: 20px auto;
+  transform: translate(-50%, -55%);
+  background: rgba(0, 0, 0, 0.9);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.modal-box > p {
+  background: none !important;
+}
+.form {
+  background: none !important;
+}
+
+.edit-box {
+  background: none !important;
+}
+
+.modal-box p:first-child {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.modal-box .edit-box {
+  position: relative;
+}
+
+.modal-box .edit-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.modal-box .edit-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.modal-box .edit-box input:focus ~ label,
+.modal-box .edit-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #fff;
+  font-size: 12px;
+}
+
+.modal-box form button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 3px;
+  border: none;
+}
+
+.modal-btns {
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.modal-btns > button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 3px;
+  border: none;
+}
+
+.modal-box button:hover {
+  background: #fff;
+  color: #272727;
+  border-radius: 5px;
+}
+
+.modal-box button span {
+  position: absolute;
+  display: block;
+}
+
+.modal-box button span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff);
+  animation: btn-anim1 1.5s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+.modal-box button span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fff);
+  animation: btn-anim2 1.5s linear infinite;
+  animation-delay: 0.375s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.modal-box button span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fff);
+  animation: btn-anim3 1.5s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.modal-box button span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fff);
+  animation: btn-anim4 1.5s linear infinite;
+  animation-delay: 1.125s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.modal-box p:last-child {
+  color: #aaa;
+  font-size: 14px;
+}
+
+.modal-box button.a2 {
+  color: #fff;
+  text-decoration: none;
+}
+
+.modal-box button.a2:hover {
+  background: transparent;
+  color: #aaa;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .modal-box {
+    z-index: 1;
+    width: 45%;
+    margin: 3rem 0 0 -3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .modal-box {
+    z-index: 1;
+    width: 70%;
+    margin: 4rem 0 0 3rem;
+  }
+}
+
+@media (max-width: 375px) {
+  .modal-box {
+    width: 75%;
+    margin: 4rem 0 0 2rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .modal-box {
+    width: 80%;
+    margin: 4rem 0 0 2rem;
+  }
+
+  .modal-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

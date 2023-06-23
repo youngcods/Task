@@ -1,0 +1,43 @@
+.home-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+.roman-pagination {
+  width: 100%;
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.roman-radio {
+  margin: 0 8px;
+  background: none;
+}
+
+.roman-radio > span {
+  background: none;
+}
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"]:checked ~ span {
+  color: white;
+}
+input[type="radio"]:checked ~ .title {
+  display: inline;
+  margin-left: 0;
+}

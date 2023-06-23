@@ -1,0 +1,44 @@
+.formBlock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formBlock input {
+  width: 50%;
+  height: 40px;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  outline: none;
+  text-align: center;
+}
+
+.formBlock input::placeholder {
+  text-align: center;
+}
+
+.formBlock textarea {
+  outline: none;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.formBlock textarea::placeholder {
+  text-align: center;
+}
+
+.formBlock button {
+  background: none;
+  border: 1px solid #fff;
+  transition: linear 250ms;
+  width: 40%;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  outline: none;
+}

@@ -1,0 +1,116 @@
+.create-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.create-title-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 60vh;
+}
+
+.create-title-box > h1 {
+  font-size: 100px;
+}
+
+.form-box {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.form-box > input {
+  width: 25%;
+  height: 45px;
+  border-radius: 25px;
+  color: white;
+  background: #171717;
+  outline: none;
+  border: none;
+  box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+  padding-left: 20px;
+}
+
+.create-btns {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 2rem 0 2rem 0;
+}
+
+.create-btns > button {
+  width: 13%;
+  height: 35px;
+  border: none;
+  outline: none;
+  background: #171717;
+  border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .create-title-box {
+    margin-top: 5rem;
+  }
+
+  .create-title-box > h1 {
+    font-size: 80px;
+  }
+
+  .form-box > input {
+    width: 30%;
+  }
+
+  .create-btns > button {
+    width: 15%;
+  }
+
+  .create-btns {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .create-title-box {
+    margin-top: 4rem;
+  }
+
+  .create-title-box > h1 {
+    font-size: 70px;
+  }
+
+  .form-box > input {
+    width: 55%;
+  }
+
+  .create-btns > button {
+    width: 27%;
+  }
+
+  .create-btns {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .create-title-box > h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .create-title-box > h1 {
+    font-size: 50px;
+  }
+}
